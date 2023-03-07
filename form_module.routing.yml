@@ -1,0 +1,14 @@
+form_module.form:
+  path: '/person/form'
+  defaults:
+    _form: '\Drupal\form_module\Form\PersonForm'
+    _title: 'Person form'
+  requirements:
+    _permission: 'access content'
+form_module.page:
+  path: '/person/page'
+  defaults:
+    _controller: '\Drupal\form_module\Controller\PersonController::page' 
+    _title: 'Person page'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,40 @@
+<?php
+/**
+ * Implements hook_schema().
+ *
+ */
+function form_module_schema() {
+  $schema['form_module'] = [
+    'description' => 'Stores example person entries for demonstration purposes.',
+    'fields' => [
+      'firstname' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'First name of the person.',
+      ],
+      'lastname' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Last name of the person.',
+      ],
+      'age' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'size' => 'tiny',
+        'description' => 'The age of the person in years.',
+      ],
+    ],
+    'indexes' => [
+      'firstname' => ['firstname'],
+      'lastname' => ['lastname'],
+      'age' => ['age'],
+    ],
+  ];
+
+  return $schema;
+}

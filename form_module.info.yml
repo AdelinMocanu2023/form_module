@@ -1,0 +1,5 @@
+name: Form module
+description: 'Allows users to insert and fetch data related to a person from database.'
+package: Custom
+type: module
+core_version_requirement: ^9.0 || ^10.0
