@@ -5,7 +5,7 @@
  */
 function form_module_schema() {
   $schema['form_module'] = [
-    'description' => 'Stores example person entries for demonstration purposes.',
+    'description' => 'Stores data related to a person.',
     'fields' => [
       'firstname' => [
         'type' => 'varchar',
